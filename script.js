@@ -16,7 +16,7 @@ console.log(name)
 //     socket.emit('new-user', name) 
 // }
 
-if(name !==''){
+
 socket.on('chat-message', data =>{
     appendMessage(`${data.name}: ${data.message}`)
 })
@@ -41,4 +41,4 @@ function appendMessage(message){
     const messageElement= document.createElement('div')
     messageElement.innerText = message
     messageContainer.append(messageElement)
-} }
+} 
