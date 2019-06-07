@@ -1,11 +1,10 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +13,20 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
-  }
+  },
+  "engines": {
+    "node": "12.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrhr/Realtime-Simple-Chat-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zrhr/Realtime-Simple-Chat-App/issues"
+  },
+  "homepage": "https://github.com/zrhr/Realtime-Simple-Chat-App#readme",
+  "description": ""
 }
