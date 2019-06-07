@@ -47,10 +47,16 @@
      
      
     }
-    /* .emoji-wysiwyg-editor{
-      width: 80%;
-      max-width: 1200px;
-    } */
+    .emoji-wysiwyg-editor {
+      grid-row: 3/span 1 ;
+      grid-column: 2/span 1 ;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+     justify-content: center;
+      width: auto;
+      display: flex;
+    }
     #message-container div {
         display:flex;
         justify-content: center;
@@ -81,7 +87,7 @@
   <div id="sidebarLeft"><img src="http://lh3.ggpht.com/fnbHmzCuSGCd6tpdIR1byKk75uSr19ezq9rHxaXmKancx07uM8DHPAiNZYnGDhmvpSr-HQY=w120" height="auto" alt=""></div>
   <div id="sidebarRight"><img src="http://lh3.ggpht.com/fnbHmzCuSGCd6tpdIR1byKk75uSr19ezq9rHxaXmKancx07uM8DHPAiNZYnGDhmvpSr-HQY=w120" height="auto" alt=""></div>
   <form id="send-container">
-    <input type="text" id="message-input" data-emojiable="true">
+    <input autocomplete="off" type="text" id="message-input" >
     <button type="submit" id="send-button">Send</button>
   </form>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>

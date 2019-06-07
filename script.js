@@ -3,15 +3,16 @@ const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput =document.getElementById('message-input')
 
-const name=prompt('What is your name?', 'Anon')
-while (name === "") {
-    // user pressed OK, but the input field was empty
-}  if (name) {
-    // user typed something and hit OK
-} else {
-    // user hit cancel
-    name=prompt('What is your name?', 'Anon')
-}
+//const name='ANONYmous'
+const name=prompt('What is your name?', 'ANONYMOUS') || 'ANONYMOUS'
+// while (name === "") {
+//     // user pressed OK, but the input field was empty
+// }  if (name) {
+//     // user typed something and hit OK
+// } else {
+//     // user hit cancel
+//     name=prompt('What is your name?', 'Anon')
+// }
 
 appendMessage('You joined')
 socket.emit('new-user', name)

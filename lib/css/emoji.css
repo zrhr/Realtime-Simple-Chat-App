@@ -89,13 +89,13 @@ img.emoji {
 }
 
 .emoji-wysiwyg-editor {
-    padding: 6px;
-    padding-right: 35px;
+    padding: 2px;
+    
     margin-bottom: 0px;
     min-height: 35px; /* 35 */
     height: 30px;
     max-height: 284px;
-    overflow: auto;
+    overflow: scroll;
     line-height: 17px;
     border: 1px solid #d2dbe3;
     border-radius: 2px;
@@ -105,6 +105,8 @@ img.emoji {
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     -webkit-user-select: text;
     word-wrap: break-word;
+    width: 50vw;
+    
 }
 
 .emoji-wysiwyg-editor.parent-has-scroll {
