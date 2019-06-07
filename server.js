@@ -4,7 +4,7 @@ var fs = require('fs');
 
 
 app.listen(process.env.PORT || 3000);
-
+console.log(process.env.PORT)
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html',
   function (err, data) {
